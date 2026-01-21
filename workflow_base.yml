@@ -1,0 +1,17 @@
+version: 1
+kind: workflow
+name: "Dify Workflow 示例"
+
+nodes:
+  - id: start
+    type: start
+    name: "开始"
+
+  - id: reply
+    type: answer
+    name: "直接回复"
+    content: "导入成功"
+
+connections:
+  - from: start
+    to: reply
